@@ -1,0 +1,260 @@
+<!DOCTYPE html>
+<html lang="fr">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <meta http-equiv="X-UA-Compatible" content="ie=edge"/>
+  <title data-i18n="site_title">Lubérisse Badly | Portfolio</title>
+  <meta name="description" data-i18n="site_desc" content="Portfolio de Lubérisse Badly, spécialiste en Relations Internationales et Transition Écologique. Découvrez son parcours, ses compétences et contactez-le."/>
+  <meta name="author" content="Lubérisse Badly"/>
+  <meta name="keywords" content="Lubérisse Badly, Relations Internationales, Transition Écologique, Portfolio, CV, Compétences, Contact"/>
+  <meta name="theme-color" content="#ffffff"/>
+  <link rel="icon" href="Badly1.jpg" type="image/x-icon"/>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;600;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="styles.css" />
+  <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css"/>
+  <script defer src="app.js"></script>
+</head>
+<body>
+  <!-- Animated background -->
+  <div class="bg">
+    <span class="orb orb-1"></span>
+    <span class="orb orb-2"></span>
+    <span class="orb orb-3"></span>
+    <span class="orb orb-4"></span>
+  </div>
+
+  <header class="header">
+    <nav class="navbar container">
+      <div class="brand">
+        <img src="Badly.jpg" alt="Portrait de Lubérisse Badly" class="avatar" onerror="this.style.display='none'"/>
+        <div>
+          <h1 class="title" data-i18n="name">Lubérisse Badly</h1>
+          <p class="subtitle" data-i18n="tagline">Spécialiste en Relations Internationales & Transition Écologique</p>
+        </div>
+      </div>
+
+      <div class="controls">
+        <label class="visually-hidden" for="lang">Language</label>
+        <select id="lang" class="lang-switch" aria-label="Select language">
+          <option value="fr">FR</option>
+          <option value="en">EN</option>
+          <option value="es">ES</option>
+          <option value="pt">PT</option>
+        </select>
+        <button id="themeToggle" class="btn ghost" aria-label="Toggle theme">
+          <i class="fa-solid fa-moon"></i>
+        </button>
+      </div>
+    </nav>
+
+    <div class="tabs container">
+      <a href="#home" class="tab" data-i18n="nav_home">Accueil</a>
+      <a href="#education" class="tab" data-i18n="nav_education">Formation</a>
+      <a href="#experience" class="tab" data-i18n="nav_experience">Expériences</a>
+      <a href="#skills" class="tab" data-i18n="nav_skills">Compétences</a>
+      <a href="#contact" class="tab" data-i18n="nav_contact">Contact</a>
+    </div>
+  </header>
+
+  <main class="container">
+
+    <!-- Hero Section with 2D animations -->
+    <section id="home" class="section hero reveal">
+      <div class="hero-text">
+        <h2 data-i18n="hero_title">Construire des passerelles entre les peuples et la planète</h2>
+        <p data-i18n="hero_desc">
+          Professionnel dynamique, organisé et résilient. Master 2 en Relations Internationales,
+          Licence en Droit, et solide expérience juridique, administrative et diplomatique.
+          Spécialisé en transition écologique, gestion de projets et communication interculturelle.
+        </p>
+        <div class="cta">
+          <a class="btn primary" href="cv-badly.pdf" download data-i18n="btn_download">Télécharger le CV (PDF)</a>
+          <a class="btn outline" href="#contact" data-i18n="btn_contact">Me contacter</a>
+        </div>
+      </div>
+      <div class="hero-anim" aria-hidden="true">
+        <div class="card float-1">
+          <i class="fa-solid fa-earth-europe"></i>
+        </div>
+        <div class="card float-2">
+          <i class="fa-solid fa-scale-balanced"></i>
+        </div>
+        <div class="card float-3">
+          <i class="fa-solid fa-seedling"></i>
+        </div>
+      </div>
+    </section>
+
+    <!-- Education -->
+    <section id="education" class="section reveal">
+      <h2 class="section-title" data-i18n="education_title">Formation</h2>
+      <div class="timeline">
+        <article class="timeline-item">
+          <div class="dot"></div>
+          <h3 data-i18n="edu_m2_title">Master 2 – Relations Internationales & Transition Écologique</h3>
+          <p class="meta"><span>Université Jean Moulin Lyon 3</span> · <span data-i18n="edu_m2_dates">2022–2024</span></p>
+          <ul>
+            <li data-i18n="edu_m2_b1">Analyse des dynamiques internationales</li>
+            <li data-i18n="edu_m2_b2">Gestion de projets & acteurs locaux</li>
+            <li data-i18n="edu_m2_b3">Communication et négociation interculturelle</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item">
+          <div class="dot"></div>
+          <h3 data-i18n="edu_llb_title">Licence en Droit</h3>
+          <p class="meta"><span>Université d'État d'Haïti</span> · <span data-i18n="edu_llb_dates">2015–2019</span></p>
+          <ul>
+            <li data-i18n="edu_llb_b1">Droit civil & pénal haïtien</li>
+            <li data-i18n="edu_llb_b2">Interprétation de textes juridiques</li>
+            <li data-i18n="edu_llb_b3">Rédaction d'actes juridiques</li>
+          </ul>
+        </article>
+
+        <article class="timeline-item">
+          <div class="dot"></div>
+          <h3 data-i18n="edu_acc_title">Attestation de Licence en Comptabilité</h3>
+          <p class="meta"><span>Université de Port-au-Prince</span> · <span data-i18n="edu_acc_dates">2001–2008</span></p>
+          <ul>
+            <li data-i18n="edu_acc_b1">Principes comptables</li>
+            <li data-i18n="edu_acc_b2">Analyses financières & gestion de projets</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Experience -->
+    <section id="experience" class="section reveal">
+      <h2 class="section-title" data-i18n="exp_title">Expériences</h2>
+      <div class="cards">
+        <article class="card glow">
+          <h3 data-i18n="exp_c_meci_title">Responsable juridique & partenariats</h3>
+          <p class="meta">Climate Mentorship Citadel – C‑MeCI · <span data-i18n="exp_c_meci_dates">Depuis 2024</span></p>
+          <ul>
+            <li data-i18n="exp_c_meci_b1">Pilotage juridique, conventions & partenariats</li>
+            <li data-i18n="exp_c_meci_b2">Appui à la stratégie climat Caraïbes–Amérique du Nord</li>
+          </ul>
+        </article>
+
+        <article class="card glow">
+          <h3 data-i18n="exp_consulat_title">Stagiaire – Consulat Général d’Haïti</h3>
+          <p class="meta">Paris · <span data-i18n="exp_consulat_dates">Sept.–Déc. 2024</span></p>
+          <ul>
+            <li data-i18n="exp_consulat_b1">Accueil, information & orientation des usagers</li>
+            <li data-i18n="exp_consulat_b2">Rédaction de notes & rapports consulaires</li>
+            <li data-i18n="exp_consulat_b3">Veille informationnelle</li>
+          </ul>
+        </article>
+
+        <article class="card glow">
+          <h3 data-i18n="exp_minabi_title">Stagiaire – Association MINABI</h3>
+          <p class="meta">Lyon · <span data-i18n="exp_minabi_dates">Avr.–Juil. 2024</span></p>
+          <ul>
+            <li data-i18n="exp_minabi_b1">Gestion de projets & conduite de réunions</li>
+            <li data-i18n="exp_minabi_b2">Rédaction de rapports & fiches de synthèse</li>
+          </ul>
+        </article>
+
+        <article class="card glow">
+          <h3 data-i18n="exp_sncfl_title">Hôte d’accueil – City One / SNCF</h3>
+          <p class="meta">Lyon Part‑Dieu · <span data-i18n="exp_sncfl_dates">Août–Déc. 2023</span></p>
+          <ul>
+            <li data-i18n="exp_sncfl_b1">Orientation des clients & assistance billetterie</li>
+            <li data-i18n="exp_sncfl_b2">Rapports opérationnels</li>
+          </ul>
+        </article>
+
+        <article class="card glow">
+          <h3 data-i18n="exp_acropole_title">Avocat Assistant – L’Acropole</h3>
+          <p class="meta">Port‑au‑Prince · <span data-i18n="exp_acropole_dates">2019–2022</span></p>
+          <ul>
+            <li data-i18n="exp_acropole_b1">Rédaction d’actes & gestion des dossiers</li>
+            <li data-i18n="exp_acropole_b2">Représentation conjointe des clients</li>
+          </ul>
+        </article>
+
+        <article class="card glow">
+          <h3 data-i18n="exp_pnh_title">Chef d’alerte – Police Nationale d’Haïti (DCPJ)</h3>
+          <p class="meta">Clercine · <span data-i18n="exp_pnh_dates">2006–2022</span></p>
+          <ul>
+            <li data-i18n="exp_pnh_b1">Coordination d’équipes & gestion de crises</li>
+            <li data-i18n="exp_pnh_b2">Analyse d’incidents & rapports de synthèse</li>
+          </ul>
+        </article>
+      </div>
+    </section>
+
+    <!-- Skills -->
+    <section id="skills" class="section reveal">
+      <h2 class="section-title" data-i18n="skills_title">Compétences & Langues</h2>
+
+      <div class="grid two">
+        <div class="panel">
+          <h3 data-i18n="skills_core_title">Compétences clés</h3>
+          <ul class="tags">
+            <li data-i18n="skill_ri">Relations internationales</li>
+            <li data-i18n="skill_franco">Francophonie</li>
+            <li data-i18n="skill_ecotrans">Transition écologique</li>
+            <li data-i18n="skill_proj">Gestion de projets & crises</li>
+            <li data-i18n="skill_comm">Communication interculturelle</li>
+            <li data-i18n="skill_lead">Leadership & coordination</li>
+            <li data-i18n="skill_office">Word · Excel · PowerPoint</li>
+          </ul>
+        </div>
+
+        <div class="panel">
+          <h3 data-i18n="skills_lang_title">Langues</h3>
+          <ul class="bars">
+            <li><span data-i18n="lang_fr_label">Français</span><div class="bar"><i style="--w:100%"></i></div><em data-i18n="lang_fr_val">Langue maternelle</em></li>
+            <li><span data-i18n="lang_en_label">Anglais</span><div class="bar"><i style="--w:80%"></i></div><em data-i18n="lang_en_val">B2</em></li>
+            <li><span data-i18n="lang_es_label">Espagnol</span><div class="bar"><i style="--w:65%"></i></div><em data-i18n="lang_es_val">B1</em></li>
+          </ul>
+        </div>
+      </div>
+    </section>
+
+    <!-- Contact -->
+    <section id="contact" class="section reveal">
+      <h2 class="section-title" data-i18n="contact_title">Contact</h2>
+
+      <div class="grid two">
+        <div class="panel">
+          <ul class="contact">
+            <li><i class="fa-solid fa-location-dot"></i> <span data-i18n="contact_loc">Verneuil‑sur‑Seine (78480), Île‑de‑France</span></li>
+            <li><i class="fa-solid fa-phone"></i> <a href="tel:+33758080294">+33 7 58 08 02 94</a></li>
+            <li><i class="fa-solid fa-envelope"></i> <a href="mailto:luberissebadly@yahoo.fr">luberissebadly@yahoo.fr</a></li>
+            <li><i class="fa-solid fa-id-card"></i> <span data-i18n="contact_permis">Permis B</span></li>
+          </ul>
+
+          <div class="socials">
+            <a href="https://www.linkedin.com/in/badly-lub%C3%A9risse-8b0651255" target="_blank" rel="noopener" aria-label="LinkedIn"><i class="fa-brands fa-linkedin"></i></a>
+            <a href="https://twitter.com/badly_w" target="_blank" rel="noopener" aria-label="Twitter"><i class="fa-brands fa-x-twitter"></i></a>
+            <a href="https://www.facebook.com/badly.luberisse.3" target="_blank" rel="noopener" aria-label="Facebook"><i class="fa-brands fa-facebook"></i></a>
+          </div>
+        </div>
+
+        <div class="panel">
+          <h3 data-i18n="contact_cv_title">Télécharger le CV</h3>
+          <p><a class="btn primary" href="cv-badly.pdf" download data-i18n="btn_download_2">Télécharger le CV (PDF)</a></p>
+          <form class="contact-form" onsubmit="event.preventDefault(); window.location.href='mailto:luberissebadly@yahoo.fr';">
+            <label for="msg" data-i18n="contact_msg_label">Un message rapide ?</label>
+            <textarea id="msg" rows="4" placeholder="Bonjour..." data-i18n-placeholder="contact_msg_ph"></textarea>
+            <button class="btn outline" type="submit" data-i18n="contact_btn_send">Envoyer par email</button>
+          </form>
+        </div>
+      </div>
+    </section>
+
+  </main>
+
+  <footer class="footer">
+    <div class="container">
+      <p>© <span id="year"></span> <span data-i18n="name">Lubérisse Badly</span> · <span data-i18n="footer_all">Tous droits réservés</span></p>
+      <p class="credit">Design & dev: <strong>Karlito</strong> · <a href="https://badley08.github.io/Karlito">Karlito</a></p>
+    </div>
+  </footer>
+</body>
+</html>
